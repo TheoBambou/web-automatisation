@@ -3,7 +3,7 @@ require 'watir'
 # Chemin vers le pilote chromedriver
 Selenium::WebDriver::Chrome::Service.driver_path = '/usr/lib/chromium-browser/chromedriver'
 
-# Ouvre une nouvelle instance de Chromium avec la page 3CX
+# Ouvre une nouvelle instance de Chromium avec la page web
 browser = Watir::Browser.new :chrome, options: { args: ['--app=LIEN VERS LE SITE WEB', '--disable-infobars'] }
 
 # Localise le nom d'utilisateur et le mot de passe grâce aux ID dans le code de la page
